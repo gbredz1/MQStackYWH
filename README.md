@@ -18,3 +18,5 @@ docker compose run crawler
 
 ### 4. Results on grafana
 http://localhost:3000
+> *login:* admin\
+> *password:* admin1234
