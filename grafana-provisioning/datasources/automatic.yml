@@ -1,0 +1,16 @@
+apiVersion: 1
+
+datasources:
+  - name: influxdb
+    type: influxdb
+    access: proxy
+    orgId: 1
+    url: $TSDB_HOST
+    user: $DOCKER_INFLUXDB_INIT_USERNAME
+    database: $DOCKER_INFLUXDB_INIT_BUCKET
+    basicAuth: true
+    basicAuthUser: $DOCKER_INFLUXDB_INIT_USERNAME
+    secureJsonData:
+      basicAuthPassword: $DOCKER_INFLUXDB_INIT_ADMIN_TOKEN
+    version: 1
+    editable: true
