@@ -13,7 +13,7 @@ docker compose up worker
 
 ### 3. Run crawler
 ```bash
-docker compose run crawler
+docker compose up crawler
 ```
 
 ### 4. Results on grafana
