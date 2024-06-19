@@ -1,6 +1,7 @@
 from typing import List
 from pydantic import BaseModel
 
+
 class Program(BaseModel):
     title: str
     slug: str
